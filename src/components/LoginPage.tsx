@@ -12,13 +12,26 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  function getUsers(): Record<string, string> {
+    const env = process.env.NEXT_PUBLIC_USERS;
+    if (env) {
+      try {
+        return JSON.parse(env);
+      } catch {
+        return { admin: '1234' };
+      }
+    }
+    return { admin: '1234' };
+  }
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError('');
     setLoading(true);
 
     setTimeout(() => {
-      if (username === 'admin' && password === '1234') {
+      const users = getUsers();
+      if (users[username] && users[username] === password) {
         onLogin();
       } else {
         setError('Invalid username or password');
