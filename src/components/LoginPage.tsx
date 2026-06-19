@@ -57,7 +57,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           <h1 className="text-xl font-bold tracking-tight" style={{ color: '#e4e5e7' }}>
             2D Cutting Optimizer
           </h1>
-          <p className="text-xs mt-1" style={{ color: '#6b7280' }}>
+          <p className="text-xs mt-1" style={{ color: '#a0a8b6' }}>
             Industrial Panel Optimization System
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           </button>
         </form>
 
-        <p className="text-center text-xs mt-6" style={{ color: '#4b5563' }}>
+        <p className="text-center text-xs mt-6" style={{ color: '#8b95a5' }}>
           Industrial Panel Optimization v1.0
         </p>
       </div>

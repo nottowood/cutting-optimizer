@@ -92,7 +92,7 @@ export default function PanelInput({
       </div>
 
       <div className="p-3 sm:p-4 space-y-2">
-        <div className={`grid gap-2 text-xs font-medium uppercase tracking-wider px-1 ${showLabel ? 'grid-cols-[1fr_1fr_0.7fr_1fr_auto]' : 'grid-cols-[1fr_1fr_0.7fr_auto]'}`} style={{ color: '#6b7280' }}>
+        <div className={`grid gap-2 text-xs font-medium uppercase tracking-wider px-1 ${showLabel ? 'grid-cols-[1fr_1fr_0.7fr_1fr_auto]' : 'grid-cols-[1fr_1fr_0.7fr_auto]'}`} style={{ color: '#a0a8b6' }}>
           <span>Width</span>
           <span>Length</span>
           <span>Qty</span>
@@ -101,7 +101,7 @@ export default function PanelInput({
         </div>
 
         {panels.length === 0 && (
-          <p className="text-center py-6 sm:py-8 text-sm" style={{ color: '#4b5563' }}>
+          <p className="text-center py-6 sm:py-8 text-sm" style={{ color: '#8b95a5' }}>
             No panels added. Click <strong>+ Add Row</strong> or <strong>Import CSV</strong>.
           </p>
         )}

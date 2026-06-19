@@ -100,7 +100,7 @@ export default function Home() {
               <h1 className="text-base sm:text-lg font-bold tracking-tight" style={{ color: '#e4e5e7' }}>
                 2D Cutting Optimizer
               </h1>
-              <p className="text-xs" style={{ color: '#6b7280' }}>Industrial Panel Optimization</p>
+              <p className="text-xs" style={{ color: '#a0a8b6' }}>Industrial Panel Optimization</p>
             </div>
           </div>
           <ThemePicker theme={theme} onChange={setTheme} onLogout={handleLogout} />
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
 
         {/* CSV format hint */}
-        <div className="text-center text-xs" style={{ color: '#4b5563' }}>
+        <div className="text-center text-xs" style={{ color: '#8b95a5' }}>
           CSV format: <code className="px-1.5 py-0.5 rounded" style={{ background: '#22252b', border: '1px solid #2e3138' }}>width, length, quantity [, label]</code> — one row per panel type
         </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
             className="w-full sm:w-auto px-8 py-2.5 rounded font-semibold text-sm sm:text-base transition-all disabled:opacity-30 disabled:cursor-not-allowed"
             style={{
               background: canOptimize ? '#e8a631' : '#3a3d45',
-              color: canOptimize ? '#1a1d23' : '#6b7280',
+              color: canOptimize ? '#1a1d23' : '#a0a8b6',
             }}
           >
             {isOptimizing ? 'Optimizing...' : 'Run Optimization'}
@@ -197,7 +197,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="text-center py-6 text-xs" style={{ color: '#4b5563', borderTop: '1px solid #2e3138' }}>
+      <footer className="text-center py-6 text-xs" style={{ color: '#8b95a5', borderTop: '1px solid #2e3138' }}>
         2D Cutting Optimizer v1.0 — Industrial Panel Optimization System
       </footer>
     </div>

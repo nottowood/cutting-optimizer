@@ -31,7 +31,7 @@ export default function CuttingDiagram({ pattern, index }: CuttingDiagramProps) 
             x{pattern.sheetCount} sheet{pattern.sheetCount > 1 ? 's' : ''}
           </span>
         </h3>
-        <div className="flex items-center gap-3 text-xs" style={{ color: '#6b7280' }}>
+        <div className="flex items-center gap-3 text-xs" style={{ color: '#a0a8b6' }}>
           <span>{pattern.stockWidth} x {pattern.stockLength}</span>
           <span
             className="px-2 py-0.5 rounded"
